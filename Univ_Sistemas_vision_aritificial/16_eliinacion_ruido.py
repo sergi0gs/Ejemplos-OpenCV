@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread('perros_1.jpg',0)
+img = cv2.imread('perros_4.jpg',0)
 kernel = np.ones((5,5),np.uint8)
 erosion = cv2.erode(img,kernel,iterations=1)
 opening = cv2.morphologyEx(erosion, cv2.MORPH_OPEN, kernel)
